@@ -4,7 +4,7 @@ import math as m
 
 # Read the Shapefile of lines
 # 读取线的Shapefile文件
-file_path = r'DelStraightLine\data\Input.shp'#inputLineNODupli.shp'#
+file_path = r'DelStraightLine\Input.shp'#inputLineNODupli.shp'#
 gdf = gpd.read_file(file_path)
 
 # Create a temporary copy of the input layer
@@ -42,5 +42,5 @@ for index, row in gdf_temp.iterrows():
 
 # Save the temporary layer to a new Shapefile
 # 保存临时图层到新的Shapefile文件
-output_temp_path = r'DelStraightLine\data\Output2.shp'#inputLinesrRes.shp'#
+output_temp_path = r'DelStraightLine\Output2.shp'#inputLinesrRes.shp'#
 gdf_temp.to_file(output_temp_path)
